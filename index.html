@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" onsubmit="alert('Backend server load too high - try again later.')">
+            <h2>Keyboarding Class v4.0</h2>
+            <label for="username">Register Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Register Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+            <label>Already have an account? <a href="https://keyboarding-class-login.vercel.app">Log in.</a> Hotel? Trivago.</label>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+/* Reset default margin and padding for all elements */
+/* Reset default margin and padding for all elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1e1e1e, #000000);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    width: 400px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    color: #bdc3c7;
+}
+
+input {
+    padding: 14px;
+    margin: 8px 0;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #111;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    padding: 14px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 4%;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Add a class to hide the embedded content initially */
+.hidden {
+    display: none;
+}
+
+/* Ensure the embedded content takes up 100% of the width and height */
+#embeddedContent {
+    width: 100%;
+    height: 100%;
+}
+</style>
